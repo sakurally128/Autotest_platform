@@ -1,0 +1,2 @@
+# Autotest_platform
+Autotest_platform 是一款基于 POM 模式开发的 Web UI 自动化测试平台，通过选择绑定好的 selenium 的关键字，比如打开 url，左键点击，输入文本等等这些动作，背后的代码已在后端封装好，前端只需要像填表格来设计测试案例即可。此外，由于平台是基于 POM 模式的设计，项目，页面，元素，定位都可拆分管理，我们可以更为方便维护我们的测试脚本，当产品发生迭代的时候，我们只需要修改对应页面对应元素的定位即可，无需重新设计涉及到这个元素的所有测试案例。数据库当中已封装了 selenium 常见的关键字，可以在 ./Autotest_platform/PageObject/Base.py 里面自行添加自己需要的 selenium 关键字，甚至是更为复杂的自定义函数。./Autotest_platform/PageObject/Base_m.py 为手机端函数的封装，需要开启 Appium 连接手机
